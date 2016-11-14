@@ -1,6 +1,7 @@
 ### Big picture
   - In this project, you are going to implement a simplied version of Map Reduce infrastructure. Please read [MapReduce](https://static.googleusercontent.com/media/research.google.com/en//archive/mapreduce-osdi04.pdf) paper, before you start.
   - This is going to be a long project, **Start late at your own risk** 
+  - Short [video](https://youtu.be/bwBrduQ1RUE) browsing through the project structure.
 
 ![Meme](https://memecrunch.com/meme/1HMYR/should-have-started-earlier/image.jpg?w=500&c=1)
 
