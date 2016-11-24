@@ -28,7 +28,6 @@ class UserReducer : public BaseReducer {
 		virtual void reduce(const std::string& key, const std::vector<std::string>& values) override {
 			std::vector<int> counts;
 			std::transform(values.cbegin(), values.cend(), std::back_inserter(counts), [](const std::string numstr){ return atoi(numstr.c_str()); });
-			std::cout << "UserReducer, I 'm not ready yet" << std::endl;
 			emit(key, std::to_string(std::accumulate(counts.begin(), counts.end(), 0)));
 		}
 
