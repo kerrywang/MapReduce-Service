@@ -22,7 +22,7 @@ This gives you an insight of how a user will use your MapReduce package.
 Now you own the development of MapReduce and this is where you implement the ideas.
 We are describing here only the files which you are supposed to work on. For the other files, just have a quick glance through them. It should be straightforward to understand their purpose.
 
-1. **`masterworker.proto`** - containing the grpc protocol between master and worker. **`The choice of communication mode (synchronous/asynchronous) is up to you. We will accept both methods.`**
+1. **`masterworker.proto`** - containing the grpc protocol between master and worker. **The choice of communication mode (synchronous/asynchronous) is up to you. We will accept both methods.**
 
 2. **`file_shard.h`** - This file contains the data structure for how you would maintain info about the file splits, that master passes to workers for mapper task. Also it contains functions, that framework will call to generate file shards given the split size.
 
