@@ -58,7 +58,9 @@ MapReduce is a programming model and an associated implementation for processing
 
 6. **`The reduce worker iterates over the sorted intermediate data and for each unique intermediate key encountered, it passes the key and the corresponding set of intermediate values to the user’s Reduce function. The output of the Reduce function is appended to a final output file for this reduce partition.`**
  - This would be done the same way in your implementation. Make sure each reducer has its own file(create in the user given output directory) to which it appends its results.
-
+ ** The output of the reducer must be of the format:
+ key< space >value\n
+ i.e., you must use a single space as a delimiter between the key and the value. **
 
 7. **`When all map tasks and reduce tasks have been completed, the master wakes up the user program. At this point, the MapReduce call in the user program returns back to the user code.`**
  - This would be done the same way in your implementation. Waking up is simply the return from the function call.
