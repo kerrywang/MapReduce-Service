@@ -57,8 +57,7 @@ MapReduce is a programming model and an associated implementation for processing
 
 
 6. **`The reduce worker iterates over the sorted intermediate data and for each unique intermediate key encountered, it passes the key and the corresponding set of intermediate values to the user’s Reduce function. The output of the Reduce function is appended to a final output file for this reduce partition.`**
- - This would be done the same way in your implementation. Make sure each reducer has its own file(create in the user given output directory) to which it appends its results.
- ** The output of the reducer must be of the format:
+ - This would be done the same way in your implementation. Make sure each reducer has its own file(create in the user given output directory) to which it appends its results. ** The output of the reducer must be of the format:
  key< space >value\n
  i.e., you must use a single space as a delimiter between the key and the value. **
 
