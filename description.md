@@ -73,7 +73,7 @@ MapReduce is a programming model and an associated implementation for processing
 This project is not performance oriented, we will only test the functionality.
 The Rubric is:
 
-- **6.0 points** - `Framework & Master`: Handling config files, sharding, managing worker pool, assigning tasks to the workers, tracking worker progress, handling stragglers.
+- **6.0 points** - `Framework & Master`: Handling config files, sharding, managing worker pool, assigning tasks to the workers, tracking worker progress, handling worker failures.
 - **3.0 points** - `Mapper`: Reading input shard, passing data to the BaseMapper's implentation(UserMapper class), receiving output key, value pairs from the it and writig them to correct intermediate files.
 - **3.0 points** - `Reducer`: Reading respective intermediate files, passing the key, value pairs to the BaseReducer's implementation(UserReducer class), writing the output key, value pairs from it to the output files, ensuring that output is sorted on the output keys.
 
