@@ -35,7 +35,7 @@ MapReduce is a programming model and an associated implementation for processing
   - Your master is also given the number R, i.e., number of output files from the config. For simplicity, you can `start your reduce phase when ALL of the map tasks are done`.
  
  
-3. **`A worker who is assigned a map task reads the contents of the corresponding input split. It parses key/value pairs out of the input data and passes each pair to the user-defined Map function. The intermediate key/value pairs produced by the Map function are buffered in memory.`**
+3. **`A worker who is assigned a map task reads the contents of the corresponding input split. It parses records out of the input data and passes each record to the user-defined Map function. The intermediate key/value pairs produced by the Map function are buffered in memory.`**
  - Once a worker is assigned a 'map' task by the master, how should it process the input shard assigned to it? 
  - Your application logic (Word count - counting the number of occurences for each word in the input, or finding mean-max temperature for each month from the given record of temperatures, etc.) should be written in BaseMapper's implementation(UserMapper: see the provided code for more details).
  - You should call 'map' from the user's mapper (UserMapper's map()) on each record one-by-one. We will assume that the records are separated by '\n'.
