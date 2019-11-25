@@ -1,0 +1,74 @@
+[
+ {
+  "directory": "/home/kaiyuewang/Georgia_Tech/CS6210-AOS/cs6210Project4/src",
+  "arguments": [
+   "g++",
+   "-c",
+   "masterworker.pb.cc",
+   "-I../external/include",
+   "-std=c++11",
+   "-g"
+  ],
+  "file": "masterworker.pb.cc"
+ },
+ {
+  "directory": "/home/kaiyuewang/Georgia_Tech/CS6210-AOS/cs6210Project4/src",
+  "arguments": [
+   "g++",
+   "-c",
+   "masterworker.grpc.pb.cc",
+   "-I../external/include",
+   "-std=c++11",
+   "-g"
+  ],
+  "file": "masterworker.grpc.pb.cc"
+ },
+ {
+  "directory": "/home/kaiyuewang/Georgia_Tech/CS6210-AOS/cs6210Project4/src",
+  "arguments": [
+   "g++",
+   "-c",
+   "mapreduce_impl.cc",
+   "-I../external/include",
+   "-std=c++11",
+   "-g"
+  ],
+  "file": "mapreduce_impl.cc"
+ },
+ {
+  "directory": "/home/kaiyuewang/Georgia_Tech/CS6210-AOS/cs6210Project4/src",
+  "arguments": [
+   "g++",
+   "-c",
+   "mapreduce.cc",
+   "-I../external/include",
+   "-std=c++11",
+   "-g"
+  ],
+  "file": "mapreduce.cc"
+ },
+ {
+  "directory": "/home/kaiyuewang/Georgia_Tech/CS6210-AOS/cs6210Project4/src",
+  "arguments": [
+   "g++",
+   "-c",
+   "mr_task_factory.cc",
+   "-I../external/include",
+   "-std=c++11",
+   "-g"
+  ],
+  "file": "mr_task_factory.cc"
+ },
+ {
+  "directory": "/home/kaiyuewang/Georgia_Tech/CS6210-AOS/cs6210Project4/src",
+  "arguments": [
+   "g++",
+   "-c",
+   "run_worker.cc",
+   "-I../external/include",
+   "-std=c++11",
+   "-g"
+  ],
+  "file": "run_worker.cc"
+ }
+]

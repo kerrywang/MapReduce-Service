@@ -12,9 +12,18 @@ bool MapReduceImpl::run(const std::string& config_filename) {
         return false;
     }
 
+
     if(!create_shards()) {
         std::cerr << "Failed to create shards." << std::endl;
         return false;
+    }
+
+    // print shared files
+    for (auto &file_shard : file_shards_) {
+        std::cout << "new shard ...." << std::endl;
+        for (auto &shard_info : file_shard.shards) {
+            std::cout << shard_info.file_name << "start: " << shard_info.start_offset << "end: " << shard_info.end_offset << std::endl;
+        }
     }
 
     if(!run_master()) {
